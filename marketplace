@@ -1,41 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Simple Resale Market</title>
   <style>
-    body { font-family: Arial; background:#f5f5f5; margin:0; }
-    header { background:#222; color:white; padding:15px; text-align:center; }
-    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; padding:20px; }
-    .card { background:white; padding:15px; border-radius:6px; }
-    button { background:black; color:white; padding:10px; border:none; width:100%; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Resale Market</h1>
-  <p>Buy & Sell Locally</p>
+  <p>Buy & Sell Items Easily</p>
 </header>
 
 <div class="products">
+
   <div class="card">
     <h3>Used Sneakers</h3>
     <p>Condition: Good</p>
     <p>Price: $40</p>
-    <button onclick="window.location='https://paypal.me/YOURNAME/40'">
+    <button onclick="window.location='https://paypal.me/YahyaAlghabari/40'">
       Buy Now
     </button>
   </div>
 
   <div class="card">
-    <h3>iPhone Case</h3>
+    <h3>Phone Case</h3>
     <p>Condition: New</p>
     <p>Price: $10</p>
-    <button onclick="window.location='mailto:youremail@gmail.com'">
+    <button onclick="window.location='mailto:yehya150320091@gmail.com'">
       Contact Seller
     </button>
   </div>
+
 </div>
+
+<footer>
+  <p>All items sold as-is. Contact seller for questions.</p>
+  <p>Email: yehya150320091@gmail.com</p>
+</footer>
 
 </body>
 </html>
